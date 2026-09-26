@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SGA | Security Group Africa</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/global.css" />
+</head>
+<body>
+  <header class="site-header" id="site-header">
+    <a class="brand" href="#/" aria-label="SGA Security home">
+      <span class="brand-mark">S</span>
+      <span><strong>SGA</strong><small>SECURITY GROUP AFRICA</small></span>
+    </a>
+    <nav class="desktop-nav" aria-label="Main navigation">
+      <a class="active" href="#/">Home</a>
+      <a href="#/about">About</a>
+      <a href="#/services">Our Services</a>
+    </nav>
+    <button class="menu-trigger" id="menu-trigger" aria-expanded="false" aria-controls="landing-menu" aria-label="Open menu"><span></span><span></span></button>
+  </header>
+
+  <aside class="drawer" id="landing-menu" aria-hidden="true">
+    <div class="drawer-head"><span class="drawer-title">Menu</span><button class="drawer-close" data-close-menu aria-label="Close menu">×</button></div>
+    <a href="#/" class="drawer-link active"><span>⌂</span>Home</a>
+    <a href="#/about" class="drawer-link"><span>◉</span>About</a>
+    <button class="drawer-link drawer-parent" aria-expanded="false" data-services-toggle><span>⊞</span>Our Services <b>⌄</b></button>
+    <div class="drawer-submenu" id="services-submenu">
+      <a href="#/services/guarding">Manned Guarding <b>›</b></a>
+      <a href="#/services/electronic">Electronic Security <b>›</b></a>
+      <a href="#/services/response">Alarm Response <b>›</b></a>
+      <a href="#/services/protection">Close Protection <b>›</b></a>
+      <a href="#/services/training">Consultancy &amp; Training <b>›</b></a>
+    </div>
+    <a href="#/login" class="drawer-link"><span>⇥</span>Login</a>
+  </aside>
+
+  <main id="app" class="app-root"></main>
+  <footer class="site-footer"><span>© 2026 SGA Security Group Africa</span><a href="#/login">Login to staff portal <b>→</b></a></footer>
+  <script src="assets/js/auth.js"></script>
+  <script src="assets/js/router.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
