@@ -1,47 +1,224 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>SGA | Security Group Africa</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@700;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="assets/css/global.css" />
-</head>
-<body>
-  <header class="site-header" id="site-header">
-    <a class="brand" href="#/" aria-label="SGA Security home">
-      <span class="brand-mark">S</span>
-      <span><strong>SGA</strong><small>SECURITY GROUP AFRICA</small></span>
-    </a>
-    <nav class="desktop-nav" aria-label="Main navigation">
-      <a class="active" href="#/">Home</a>
-      <a href="#/about">About</a>
-      <a href="#/services">Our Services</a>
-    </nav>
-    <button class="menu-trigger" id="menu-trigger" aria-expanded="false" aria-controls="landing-menu" aria-label="Open menu"><span></span><span></span></button>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Security VPN</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page">
+      <div class="panel left-panel">
+        <header class="topbar">
+          <div class="brand" aria-label="Security logo">
+            <span class="brand-mark">◉</span>
+            <span><strong>Security</strong></span>
+          </div>
 
-  <aside class="drawer" id="landing-menu" aria-hidden="true">
-    <div class="drawer-head"><span class="drawer-title">Menu</span><button class="drawer-close" data-close-menu aria-label="Close menu">×</button></div>
-    <a href="#/" class="drawer-link active"><span>⌂</span>Home</a>
-    <a href="#/about" class="drawer-link"><span>◉</span>About</a>
-    <button class="drawer-link drawer-parent" aria-expanded="false" data-services-toggle><span>⊞</span>Our Services <b>⌄</b></button>
-    <div class="drawer-submenu" id="services-submenu">
-      <a href="#/services/guarding">Manned Guarding <b>›</b></a>
-      <a href="#/services/electronic">Electronic Security <b>›</b></a>
-      <a href="#/services/response">Alarm Response <b>›</b></a>
-      <a href="#/services/protection">Close Protection <b>›</b></a>
-      <a href="#/services/training">Consultancy &amp; Training <b>›</b></a>
+          <nav class="nav" aria-label="Main navigation">
+            <a href="#" class="active">Home</a>
+            <a href="#">Features</a>
+            <a href="#">Pricing</a>
+            <a href="#">Support</a>
+            <a href="#">Contact</a>
+          </nav>
+
+          <button class="cta-btn">Get Started</button>
+        </header>
+
+        <section class="hero">
+          <div class="eyebrow">Military-Grade Security VPN</div>
+          <h1>Most Secure <span class="accent">VPN</span> For Total Online Freedom</h1>
+          <p class="muted-copy">Protect privacy browse without limits. Our VPN ensures military-grade security and high-speed browsing.</p>
+
+          <div class="store-buttons">
+            <div class="store"><span class="icon"></span> App Store</div>
+            <div class="store"><span class="icon">◧</span> Microsoft</div>
+          </div>
+        </section>
+
+        <div class="globe-wrap">
+          <div class="glow-orb"></div>
+          <div class="globe">
+            <div class="continent"></div>
+            <span class="marker a"></span>
+            <span class="marker b"></span>
+            <span class="marker c"></span>
+            <span class="marker d"></span>
+            <span class="marker e"></span>
+            <span class="marker f"></span>
+            <span class="marker g"></span>
+            <span class="marker h"></span>
+            <span class="marker i"></span>
+            <span class="marker j"></span>
+
+            <div class="country-tag tag-1"><span class="flag">🇺🇸</span> America</div>
+            <div class="country-tag tag-2"><span class="flag">🇬🇧</span> Europe</div>
+            <div class="country-tag tag-3"><span class="flag">🇩🇪</span> Germany</div>
+            <div class="country-tag tag-4"><span class="flag">🇧🇷</span> Brazil</div>
+            <div class="country-tag tag-5"><span class="flag">🇺🇦</span> Ukraine</div>
+            <div class="country-tag tag-6"><span class="flag">🇦🇺</span> Australia</div>
+            <div class="country-tag tag-7"><span class="flag">🇸🇪</span> Sweden</div>
+          </div>
+        </div>
+      </div>
+
+      <aside class="panel right-panel">
+        <div class="mini-top">
+          <div class="top-row">
+            <span>VPS Pricing</span>
+            <span>◌</span>
+          </div>
+
+          <div class="title">
+            <strong>Flexible VPN Plans</strong>
+            <span class="radial"></span>
+          </div>
+
+          <div class="pricing">
+            <div class="plan">
+              <div>
+                <span class="label">Basic Plan</span>
+                <div class="price"><strong>$50</strong><span>/Month</span></div>
+              </div>
+              <ul>
+                <li>Global server network</li>
+                <li>Military-grade encryption</li>
+                <li>24/7 support</li>
+              </ul>
+              <button>Choose Plan</button>
+            </div>
+
+            <div class="plan active">
+              <div>
+                <span class="label">Pro Plan</span>
+                <div class="price"><strong>$89</strong><span>/Month</span></div>
+              </div>
+              <ul>
+                <li>Everything in Basic</li>
+                <li>Faster speeds</li>
+                <li>Priority access</li>
+              </ul>
+              <button>Choose Plan</button>
+            </div>
+
+            <div class="plan">
+              <div>
+                <span class="label">Enterprise</span>
+                <div class="price"><strong>$150</strong><span>/Month</span></div>
+              </div>
+              <ul>
+                <li>Dedicated support</li>
+                <li>Multi-device coverage</li>
+                <li>Premium security</li>
+              </ul>
+              <button>Choose Plan</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="social-proof">
+          <h4>Hear What Our Customers Say About Our Service</h4>
+          <div class="stats">
+            <div class="stat">
+              <strong>255M+</strong>
+              <span>Happy users worldwide</span>
+            </div>
+            <div class="stat">
+              <strong>98%</strong>
+              <span>Satisfaction rate</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="cta-banner">
+          <div class="row">
+            <span>VSE FREELY</span>
+            <span class="star">✦</span>
+            <span>SECURE ANYWHERE</span>
+            <span class="star">✦</span>
+            <span>DIGITAL SHIELD</span>
+            <span class="star">✦</span>
+            <span>SAFE</span>
+          </div>
+        </div>
+
+        <div class="promo">
+          <div>
+            <h5>Protect Your Privacy Today<br />Browse Free Without Limit</h5>
+            <p>Secure your personal data and stay protected while browsing, streaming, and connecting from anywhere.</p>
+            <div class="promo-actions">
+              <button>Get Started</button>
+              <button>Learn More</button>
+            </div>
+          </div>
+          <div class="orb"></div>
+        </div>
+
+        <div class="footer-mini">
+          <div class="links">
+            <span>Quick Links</span>
+            <span>Our Services</span>
+            <span>Contact</span>
+          </div>
+          <div class="socials">
+            <span>f</span>
+            <span>x</span>
+            <span>in</span>
+          </div>
+        </div>
+      </aside>
     </div>
-    <a href="#/login" class="drawer-link"><span>⇥</span>Login</a>
-  </aside>
 
-  <main id="app" class="app-root"></main>
-  <footer class="site-footer"><span>© 2026 SGA Security Group Africa</span><a href="#/login">Login to staff portal <b>→</b></a></footer>
-  <script src="assets/js/auth.js"></script>
-  <script src="assets/js/router.js"></script>
-  <script src="assets/js/app.js"></script>
-</body>
+    <div class="bottom-banner">
+      <div class="track">
+        <span>VSE FREELY</span>
+        <span class="star">✦</span>
+        <span>SECURE ANYWHERE</span>
+        <span class="star">✦</span>
+        <span>DIGITAL SHIELD</span>
+        <span class="star">✦</span>
+        <span>SAFE</span>
+        <span class="star">✦</span>
+        <span>VSE FREELY</span>
+        <span class="star">✦</span>
+        <span>SECURE ANYWHERE</span>
+        <span class="star">✦</span>
+        <span>DIGITAL SHIELD</span>
+        <span class="star">✦</span>
+        <span>SAFE</span>
+      </div>
+    </div>
+
+    <main class="lower-card" style="width: min(1430px, 100%); margin: 0 auto;">
+      <div class="panel left-panel" style="min-height: 0; padding: 26px 24px 30px; margin-top: 0; border-radius: 20px;">
+        <div class="lower-head">
+          <div class="title-badge">Next Level VPN</div>
+          <div class="brandseal" aria-label="brand seal"></div>
+        </div>
+
+        <h2>The Ultimate Shield For Your Digital Life</h2>
+
+        <div class="feature-grid">
+          <div class="feature-card primary">
+            <div class="feature-icon">◌</div>
+            <div>
+              <h3>Complete Online Privacy</h3>
+              <p>Keep your data protected from prying eyes and enjoy secure browsing on every device.</p>
+            </div>
+          </div>
+
+          <div class="feature-card photo">
+            <div class="photo-inner"></div>
+            <div class="photo-chip">Play Video</div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
 </html>
+
