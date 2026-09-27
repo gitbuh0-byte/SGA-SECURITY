@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import type { IconType } from "react-icons";
 import {
@@ -156,6 +157,14 @@ export default function Home() {
   return (
     <main className="page-shell">
       <section className="hero-banner">
+        <Image
+          src="/heroo.jpg"
+          alt="Security personnel guarding a modern property"
+          fill
+          priority
+          sizes="100vw"
+          className="hero-image"
+        />
         <div className="hero-overlay" />
         <div className="hero-content">
           <h1>PROTECT YOUR HOME, SECURE YOUR FUTURE</h1>
@@ -190,12 +199,26 @@ export default function Home() {
       <section className="feature-band">
         <div className="feature-inner">
           <Link href="/about-us/about-sga-security" className="feature-card feature-card-image left-card" aria-label="About SGA Security image card">
-            <div className="feature-image image-one" />
+            <Image
+              src="/about.jpg"
+              alt="About SGA Security"
+              fill
+              priority
+              sizes="(max-width: 720px) 100vw, 50vw"
+              className="feature-image image-one"
+            />
             <div className="feature-label">ABOUT SGA SECURITY</div>
           </Link>
 
           <Link href="/services/overview" className="feature-card feature-card-image right-card" aria-label="Our Services image card">
-            <div className="feature-image image-two" />
+            <Image
+              src="/serve.jpg"
+              alt="Our services"
+              fill
+              priority
+              sizes="(max-width: 720px) 100vw, 50vw"
+              className="feature-image image-two"
+            />
             <div className="feature-label">OUR SERVICES</div>
           </Link>
         </div>

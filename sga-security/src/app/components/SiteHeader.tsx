@@ -1,11 +1,17 @@
+"use client";
+
 import Link from "next/link";
+import { usePathname } from "next/navigation";
+import { useEffect, useState } from "react";
 import {
+  FaBars,
   FaBriefcase,
   FaBuilding,
   FaGlobeAfrica,
   FaHome,
   FaPhoneAlt,
   FaShieldAlt,
+  FaTimes,
   FaUserShield,
   FaUsers,
 } from "react-icons/fa";
@@ -98,21 +104,38 @@ const navItems = [
 ];
 
 export default function SiteHeader() {
+  const pathname = usePathname();
+  const [mobileOpen, setMobileOpen] = useState(false);
+
+  useEffect(() => {
+    setMobileOpen(false);
+  }, [pathname]);
+
   return (
-    <header className="top-shell">
+    <header className={`top-shell ${mobileOpen ? "mobile-open" : ""}`}>
       <div className="topbar">
         <div className="brand" aria-label="SGA Security logo">
           <span className="brand-text">SGA</span>
           <span className="brand-sub">SECURITY</span>
         </div>
 
-        <nav className="nav-list" aria-label="Main menu">
+        <button
+          type="button"
+          className="mobile-menu-toggle"
+          aria-label={mobileOpen ? "Close navigation menu" : "Open navigation menu"}
+          aria-expanded={mobileOpen}
+          onClick={() => setMobileOpen((prev) => !prev)}
+        >
+          {mobileOpen ? <FaTimes /> : <FaBars />}
+        </button>
+
+        <nav className={`nav-list ${mobileOpen ? "is-open" : ""}`} aria-label="Main menu">
           {navItems.map(({ label, icon: Icon, href, items }) => {
             const parentHref = items?.[0]?.href ?? href ?? "/";
 
             return (
               <div key={label} className={`nav-item ${items ? "has-dropdown" : ""}`}>
-                <Link href={parentHref} className="nav-btn">
+                <Link href={parentHref} className="nav-btn" onClick={() => setMobileOpen(false)}>
                   <Icon className="nav-icon" />
                   <span>{label.toUpperCase()}</span>
                 </Link>
@@ -122,7 +145,7 @@ export default function SiteHeader() {
                     <ul>
                       {items.map((item) => (
                         <li key={item.href}>
-                          <Link href={item.href} className="dropdown-link">
+                          <Link href={item.href} className="dropdown-link" onClick={() => setMobileOpen(false)}>
                             {item.label}
                           </Link>
                         </li>
